@@ -1,4 +1,12 @@
 module.exports = {
+  // some nuxt config...
+    plugins: [
+      { src: '~/plugins/nuxt-swiper-plugin.js', ssr: false }
+    ],
+    css: [
+      'swiper/css/swiper.css'
+    ],
+
   /*
   ** Headers of the page
   */
@@ -36,4 +44,3 @@ module.exports = {
     }
   }
 }
-
