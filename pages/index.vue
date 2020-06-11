@@ -6,7 +6,7 @@
         <div class="swiper-wrapper">
             <div v-for="banner in bannerList" :key="banner.id" class="swiper-slide" style="background: #040B1B;">
                 <a target="_blank" :href="banner.linkUrl">
-                  <img 
+                  <img
                     :src="banner.imageUrl"
                     :alt="banner.title"/>
                 </a>

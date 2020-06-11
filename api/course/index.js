@@ -21,5 +21,12 @@ export default {
        url: `/eduservice/api/course/selectCourserApiInfoVoById/${id}`,
        method: 'get',
      })
+   },
+   /* 根据用户id和课程id获取课程是否*/
+   getCourseInfo(id){
+     return request({
+       url: `eduservice/api/course/getCourseInfo/${id}`,
+       method: 'get',
+     })
    }
  }

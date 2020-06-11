@@ -186,7 +186,6 @@ export default {
     },
     //查询所有一级分类
     getCourseTree(){
-      //debugger
       course.getCourseTree().then(response => {
         this.subjectNestedList = response.data.data.allSubject
       })
@@ -194,7 +193,6 @@ export default {
 
     //点击一级分类，显示对应的二级分类，查询数据
     searchOne(subjectParentId, index) {
-      //debugger
       this.oneIndex = index
       this.twoIndex = -1
 
@@ -229,7 +227,6 @@ export default {
     },
     //更新时间查询
     searchGmtCreate() {
-      debugger
       this.buyCountSort = "";
       this.gmtCreateSort = "1";
       this.priceSort = "";
